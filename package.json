@@ -1,0 +1,17 @@
+{
+  "name": "random-hex-color-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": { 
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "some_1",
+  "license": "MIT",
+  "description": "A simple package to generate random hex color codes.",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
