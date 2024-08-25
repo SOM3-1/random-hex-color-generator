@@ -99,7 +99,7 @@ export const generateColorsAvoidingArray = (avoidColors: string[], num: number):
     return colors;
 };
 
-let previousColors: string[] = [];
+export let previousColors: string[] = [];
 
 /**
  * Generates an array of hex color codes, optionally remembering previously generated colors.
