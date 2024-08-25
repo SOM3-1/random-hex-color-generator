@@ -1,4 +1,4 @@
-Here's a comprehensive `README.md` file that includes detailed descriptions for each method in your `random-hex-color-generator` package:
+Here's the updated `README.md` file with accurate descriptions for each method:
 
 ```markdown
 # Random Hex Color Generator
@@ -105,6 +105,26 @@ Generates an array of hex color codes, optionally remembering previously generat
 const colors = generateColorsWithMemoryAvoidingShades("#FFFFFF", 5, true);
 console.log(colors); // e.g., ["#E57373", "#F06292", "#BA68C8", "#64B5F6", "#4DB6AC"]
 ```
+
+## License
+
+This package is licensed under the [MIT License](LICENSE).
+
+## Class Definitions
+
+### `ColorGenerator`
+
+This class provides static and instance methods to generate hex color codes.
+
+#### Methods
+
+- **`generateRandomHexColor()`**: Generates a single random hex color code.
+- **`generateRandomHexColorsArray(num: number)`**: Generates an array of random hex color codes.
+- **`generateColorsAvoidingBgColor(bgColor: string, num: number)`**: Generates an array of hex color codes avoiding shades of a specified background color.
+- **`generateColorsAvoidingArray(avoidColors: string[], num: number)`**: Generates an array of hex color codes that do not include any colors from a specified array.
+- **`generateColorsWithMemoryAvoidingShades(bgColor: string, num: number, remember: boolean)`**: Generates an array of hex color codes, optionally remembering previously generated colors and avoiding shades of a specified background color.
+
+**Note**: The `ColorGenerator` class contains internal methods and utilities used for color generation, but these are not exposed for direct use.
 
 ## License
 
