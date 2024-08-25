@@ -35,6 +35,52 @@ describe('ColorGenerator Class', () => {
       });
     });
 
+    describe('generateAnalogousPalette', () => {
+      it('should generate an array of analogous colors based on a base color', () => {
+        const baseColor = '#FF0000'; // Red
+        const num = 5;
+        const palette = ColorGenerator.generateAnalogousPalette(baseColor, num);
+        expect(palette).toHaveLength(num);
+        palette.forEach((color: string) => {
+          expect(color).toMatch(/^#[0-9A-F]{6}$/i);
+        });
+      });
+
+      it('should throw an error if base color is invalid', () => {
+        const invalidColor = '#ZZZZZZ';
+        expect(() => ColorGenerator.generateAnalogousPalette(invalidColor, 5)).toThrowError("Invalid base color hex code");
+      });
+    });
+
+    describe('generateComplementaryPalette', () => {
+      it('should generate a pair of complementary colors based on a base color', () => {
+        const baseColor = '#FF0000'; // Red
+        const palette = ColorGenerator.generateComplementaryPalette(baseColor);
+        expect(palette).toHaveLength(2);
+        palette.forEach((color: string) => {
+          expect(color).toMatch(/^#[0-9A-F]{6}$/i);
+        });
+      });
+
+      it('should throw an error if base color is invalid', () => {
+        const invalidColor = '#ZZZZZZ';
+        expect(() => ColorGenerator.generateComplementaryPalette(invalidColor)).toThrowError("Invalid base color hex code");
+      });
+    });
+
+    describe('generateBiasedColor', () => {
+      it('should generate a color with a bias towards the specified color', () => {
+        const biasColor = '#00FF00'; // Green
+        const biasedColor = ColorGenerator.generateBiasedColor(biasColor);
+        expect(biasedColor).toMatch(/^#[0-9A-F]{6}$/i);
+      });
+
+      it('should throw an error if bias color is invalid', () => {
+        const invalidColor = '#ZZZZZZ';
+        expect(() => ColorGenerator.generateBiasedColor(invalidColor)).toThrowError("Invalid bias color hex code");
+      });
+    });
+
   });
 
   describe('Instance Methods', () => {

@@ -1,6 +1,6 @@
 {
-  "name": "random-hex-color-generator",
-  "version": "1.0.0",
+  "name": "hex-color-randomizer",
+  "version": "1.0.1",
   "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "some_1",
   "license": "MIT",
-  "description": "A simple package to generate random hex color codes.",
+  "description": "A TypeScript package for generating random hex color codes.",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
