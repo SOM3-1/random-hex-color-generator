@@ -1,6 +1,6 @@
 {
   "name": "hex-color-randomizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .ts",
     "prepare": "npm run build"
   },
-  "keywords": [],
   "author": "some_1",
   "license": "MIT",
   "description": "A TypeScript package for generating random hex color codes.",
@@ -20,5 +19,22 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
-  }
+  },
+  "keywords": [
+    "hex",
+    "color",
+    "random",
+    "generator",
+    "colors",
+    "palette",
+    "frontend",
+    "react",
+    "javascript",
+    "typescript",
+    "ui",
+    "design",
+    "react-native",
+    "angular",
+    "random color generator"
+  ]
 }
