@@ -1,8 +1,7 @@
-```markdown
+
 # Hex Color Randomizer
 
 A TypeScript package for generating random hex color codes with advanced options, including avoiding certain colors or shades. This package is useful for creating unique color schemes or avoiding specific colors in your projects.
-```
 
 ## Features
 
